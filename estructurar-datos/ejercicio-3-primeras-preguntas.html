@@ -12,18 +12,18 @@
   <script>
     // Initialize Firebase
     var config = {
-      apiKey: "AIzaSyCXhHDjuVSDHQxdRhc_CRwjtTzQNhV_6Mw",
-      authDomain: "fir-3-curso.firebaseapp.com",
-      databaseURL: "https://fir-3-curso.firebaseio.com",
-      storageBucket: "fir-3-curso.appspot.com",
-      messagingSenderId: "496003402473"
+    apiKey: "AIzaSyB4YQz1MGiahDmzw-a1R9m6mW4xLaq2euk",
+    authDomain: "viaje-de-pollitos.firebaseapp.com",
+    databaseURL: "https://viaje-de-pollitos.firebaseio.com",
+    storageBucket: "viaje-de-pollitos.appspot.com",
+    messagingSenderId: "917225638328"
     };
     firebase.initializeApp(config);
   </script>
   <script>
 
   var database = firebase.database();
-  var ref = database.ref('modelos_datos/faq/propuesta3/preguntas')
+  var ref = database.ref('faq/propuesta3/preguntas')
   ref = ref.orderByChild('timestamp').limitToFirst(3);
   
   ref.on('child_added', function(ss) {
