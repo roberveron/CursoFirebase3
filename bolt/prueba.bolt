@@ -1,0 +1,10 @@
+type Msg {
+    from: String,
+    to: String,
+    body: String
+}
+path /mensajes/{id} is Msg
+{
+    read() { true }
+    write() { true }
+}

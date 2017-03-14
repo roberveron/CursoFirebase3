@@ -1,0 +1,23 @@
+{
+  "rules": {
+    "mensajes": {
+      "$id": {
+        ".validate": "newData.hasChildren(['from', 'to', 'body'])",
+        "from": {
+          ".validate": "newData.isString()"
+        },
+        "to": {
+          ".validate": "newData.isString()"
+        },
+        "body": {
+          ".validate": "newData.isString()"
+        },
+        "$other": {
+          ".validate": "false"
+        },
+        ".read": "true",
+        ".write": "true"
+      }
+    }
+  }
+}
